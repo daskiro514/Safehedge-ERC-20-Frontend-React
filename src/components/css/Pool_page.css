@@ -1,0 +1,19 @@
+.pool-btn {
+	background-color: #2b0539 !important;
+    color: white !important;
+    border: 2px solid lightgrey !important;
+    font-family: "myFirstFont" !important;
+    font-size: 20px !important;
+    padding: 0 20px !important;
+    letter-spacing: 10px !important;
+}
+
+.pool-btn-1 {
+    background-color: #2b0539 !important;
+    color: white !important;
+    border: 2px solid lightgrey !important;
+    font-family: "myFirstFont" !important;
+    font-size: 20px !important;
+    padding: 0 20px !important;
+    letter-spacing: 2px !important;
+}

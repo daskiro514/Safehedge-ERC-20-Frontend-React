@@ -1,0 +1,438 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(/fonts/big_noodle_titling.ttf);
+  font-weight: bold;
+}
+
+body {
+	font-family: "myFirstFont" !important;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	color: white;
+}
+
+button:focus {
+	outline: none;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/*::-webkit-scrollbar:hover {
+  width: 3px;
+}*/
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #7305a7; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #14021a; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/*USER CUSTOMIZE*/
+
+/*.whole-background {
+	background-image: url("/img/Galaxy_Background.png");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}*/
+.cursor-hand {
+  cursor: pointer;
+}
+
+.video-bg {
+	object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.mask {
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+	display: flex;
+	/*min-height: 100vh;*/
+}
+
+.rgba-gradient {
+  background-image: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+  background-image: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%));
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+}
+
+/*.listItem:hover {
+	background-color: rgb(50, 50, 50) !important;
+}*/
+
+.listItemFont span {
+	font-family: 'myFirstFont' !important;
+	font-size: 30px;
+	letter-spacing: 10px;
+}
+
+.font-1 {
+	font-family: 'myFirstFont' !important;
+	font-size: 30px !important;
+	letter-spacing: 2px !important;
+}
+
+.listItem:hover span {
+    text-shadow: 3px 6px 12px white;
+    -webkit-text-stroke: 2px #ffffff;
+}
+
+.listItem:hover img {
+	filter: drop-shadow(3px 3px 5px white);
+}
+
+.listItem.active span {
+	text-shadow: 4px 4px 10px #57ff12;
+    -webkit-text-stroke: 1px #37f134;
+}
+
+.listItem.active img {
+	/*filter: drop-shadow(3px 3px 5px lightgreen);*/
+    /*filter:progid:DXImageTransform.Microsoft.Glow(Color=white,Strength=5);*/
+    filter: drop-shadow(1px 1px 10px green) drop-shadow(-1px -1px 10px green);
+}
+
+.connect-wallet-btn {
+	width: 100%;
+	height: 40px;
+    background-image: url('/img/ico/Big_Subscribe_Connect_Wallet_Gold_Bar.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'myFirstFont' !important;
+    font-size: 25px !important;
+	letter-spacing: 1px !important;
+	/*box-shadow: 0 0 15px yellow;*/
+	/*box-shadow: 0 0 15px #989898;*/
+
+}
+
+.connect-wallet-btn:focus, .connect-wallet-btn-1:focus, .connect-wallet-btn-2:focus {
+	outline: none;
+}
+
+.connect-wallet-btn-1:hover, .connect-wallet-btn:hover, .connect-wallet-btn-2:hover, .connect-wallet-btn-3:hover {
+	box-shadow: none;
+	box-shadow: 0 0 15px #989898;
+}
+
+.connect-wallet-btn-1 {
+	width: calc(100% - 100px);
+	height: 50px;
+    background-image: url('/img/ico/Subscribe_and_Connect_wallet_Button_background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'myFirstFont' !important;
+    font-size: 25px !important;
+	letter-spacing: 10px !important;
+	/*box-shadow: 0 0 15px yellow;*/
+	/*box-shadow: 0 0 15px #989898;*/
+	position: absolute !important;
+	bottom: 30px;
+}
+
+.connect-wallet-btn-2 {
+	width: 100%;
+	height: 50px;
+    background-image: url('/img/ico/right_side_small_connect_wallet_backgound.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'myFirstFont' !important;
+    font-size: 25px !important;
+	letter-spacing: 10px !important;
+	/*box-shadow: 0 0 15px yellow;*/
+	/*box-shadow: 0 0 15px #989898;*/
+}
+
+.connect-wallet-btn-3 {
+	width: 100%;
+	height: 50px;
+  background-image: url('/img/pool/Connect_wallet_button.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: 'myFirstFont' !important;
+  font-size: 25px !important;
+	letter-spacing: 10px !important;
+	/*box-shadow: 0 0 15px yellow;*/
+	/*box-shadow: 0 0 15px #989898;*/
+}
+
+.safehedge-mascot {
+	max-width: 90%;
+	position: absolute;
+	left: 20px;
+	top: 60px;
+	height: calc(100vh - 100px);
+	z-index: 1;
+}
+
+.topbar-logo-size {
+	width: 45px;
+}
+
+/* ICO page */
+.ico-glow-text {
+	text-shadow: 2px 2px 5px white;
+    /*-webkit-text-stroke: 2px #ffffff;*/
+}
+.letter-spacing-10 {
+	letter-spacing: 5px;
+}
+.letter-spacing-5 {
+	letter-spacing: 1px;
+}
+
+.letter-spacing-2 {
+	letter-spacing: 2px;
+}
+
+.logo-animation {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	/*filter: drop-shadow(1px 1px 10px #ff9900) drop-shadow(-1px -1px 10px #ff9900);*/
+  	animation: neon5 1.5s ease-in-out infinite alternate;
+}
+
+.logo-animation-1 {
+  	animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+  	filter: drop-shadow(0 0 3px #6ae2fd);
+  }
+  to {
+    filter: drop-shadow(0 0 3px #6ae2fd) drop-shadow(0 0 3px #6ae2fd) drop-shadow(0 0 3px #6ae2fd);
+  }
+}
+
+@keyframes neon5 {
+  from {
+  	filter: drop-shadow(1px 1px 20px darkgoldenrod);
+  }
+  to {
+    filter: drop-shadow(1px 1px 25px darkgoldenrod) drop-shadow(-1px -1px 15px darkgoldenrod) drop-shadow(-1px -1px 15px darkgoldenrod);
+  }
+}
+
+.glow-coins {
+	filter: drop-shadow(1px 1px 10px goldenrod);
+}
+
+/*Footer part*/
+footer {
+
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+	padding: 10px 20px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.footer-mobile {
+	width: 100%;
+    text-align: center;
+}
+
+footer div img {
+	margin-left: 20px;
+	width: 40px;
+	height: 39px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer div img {
+    margin-left: 7px;
+  }
+}
+
+.copyright {
+	position: absolute;
+	bottom: 0;
+}
+
+/* Loading spinner css */
+._loading_overlay_overlay {
+	z-index: 99999 !important;
+	background-color: black !important;
+	/*min-width: 410px;*/
+}
+
+._loading_overlay_content.css-42igfv {
+	position: fixed;
+	top: calc(50vh - 50px);
+	left: calc(50vw - 40px);
+}
+
+@keyframes pageload {
+  from {
+  	opacity: 0;
+  	bottom: -300px;
+  }
+  to {
+    opacity: 1;
+  	bottom: 300px;
+  }
+}
+
+.page-load {
+	animation: pageload 1.5s ease-in-out;
+}
+
+#medium-widget div, a {
+	color: white !important;
+	font-size: 20px;
+	letter-spacing: 2px !important;
+}
+
+#medium-widget {
+	background-color: #00000082;
+	padding: 10px;
+}
+
+.medium-widget-article__content a {
+	font-size: 30px;
+	letter-spacing: 3px !important;
+}
+
+.medium-widget-article__info {
+	display: flex;
+	justify-content: center;
+}
+
+.seminar-form-part div div {
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+	padding: 5px;
+}
+
+.seminar-form-part div label {
+	display: flex;
+	/*align-items: center;*/
+	margin: 0 !important;
+	/*width: 250px;*/
+	justify-content: center;
+}
+
+.seminar-form-part div input {
+	font-size: 20px;
+}
+
+.buy-btn {
+	display: inline-block;
+  font-size: 18px;
+  line-height: 48px;
+  height: 48px;
+  color: #ffffff;
+  min-width: 212px;
+  background-color: #000000;
+  text-align: center;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
+}
+
+.buy-btn-wrapper {
+	overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 258.96px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  font-family: SQ Market, Helvetica, Arial, sans-serif;
+}
+
+.usdPrice {
+  font-size: 27px;
+  color: #3dff07;
+  text-shadow: 0px 0px 0 rgb(-3,191,0),
+               0px 1px 0 rgb(-31,163,0),
+               0px 2px 0 rgb(-60,134,0),
+               0px 3px 0 rgb(-89,105,0),
+               0px 4px  0 rgb(-118,76,0),
+               0px 5px 4px rgba(0,0,0,0.78),
+               0px 5px 1px rgba(0,0,0,0.5),
+               0px 0px 4px rgba(0,0,0,.2);
+}
+
+.ethPrice {
+  font-size: 23px;
+  color: #39d90d;
+  text-shadow: 0px 0px 0 rgb(-7,153,0),
+               0px 1px 0 rgb(-35,125,0),
+               0px 2px 0 rgb(-64,96,0),
+               0px 3px 0 rgb(-93,67,0),
+               0px 4px  0 rgb(-122,38,0),
+               0px 5px 4px rgba(0,0,0,0.78),
+               0px 5px 1px rgba(0,0,0,0.5),
+               0px 0px 4px rgba(0,0,0,.2);
+}
+
+.TVChartContainer {
+  height: 100%;
+}
+
+.add-token-btn {
+    background-color: #2b0539 !important;
+    color: white !important;
+    border: 2px solid lightgrey !important;
+    font-family: "myFirstFont" !important;
+    font-size: 20px !important;
+    padding: 0 20px !important;
+    letter-spacing: 2px !important;
+    margin: 10px !important;
+    width: 80% !important;
+}
+
+.Ethereum-Coin {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.Safehedge-Coin {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
